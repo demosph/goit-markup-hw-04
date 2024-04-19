@@ -93,6 +93,15 @@ img {
 
 /* Header */
 
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    z-index: 10
+}
+
 .top-line {
     display: flex;
     height: 72px;
@@ -327,6 +336,7 @@ img {
 .parents-img-project {
     position: relative;
     overflow: hidden;
+    z-index: 5;
 }
 
 .project-link:hover .project-text,
@@ -462,7 +472,7 @@ img {
     color: var(--light-slate);
     fill: var(--light-slate);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -637,6 +647,8 @@ img {
 }
 
 .icon-modal {
+    width: 3px;
+    height: 3px;
     scale: 3;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
